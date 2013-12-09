@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Liste over flere programmeringsspråk</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="main.css">
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li><a href="index.html">Hjem</a>
+  <li><a href="kronologisk.html">Kronologisk</a>
+  <li><a href="hierarkisk.html">Hierarkisk</a>
+  <li><a href="alfabetisk.html">Alfabetisk</a>
+</ul>
+
+<!-- Main content -->
+
+<p><script>
+function valgtProgS()
+{
+var mylist=document.getElementById("listeProgS");
+document.getElementById("progSpråk").value=mylist.options[mylist.selectedIndex].text;
+}
+</script>
+</head>
+
+<body>
+<form>
+Velg et programmeringsspråk:
+<select id="listeProgS" onchange="valgtProgS()">
+  <option></option>
+  <option>ActionScript</option>
+  <option>AppleScript</option>
+  <option>Asp</option>
+  <option>BASIC</option>
+  <option>C</option>
+  <option>C++</option>
+  <option>Clojure</option>
+  <option>COBOL</option>
+  <option>ColdFusion</option>
+  <option>Erlang</option>
+  <option>Fortran</option>  
+  <option>Groovy</option>
+  <option>Haskell</option>
+  <option>Java</option>
+  <option>JavaScript</option>
+  <option>Lisp</option>
+  <option>Perl</option>
+  <option>PHP</option>
+  <option>Python</option>
+  <option>Ruby</option>
+  <option>Scala</option>
+  <option>Scheme</option>
+</select>
+<h1>Velkommen til et revolusjonerende språk som tar over verden!</h1>
+<p>Du har valgt: <input type="text" id="progSpråk" size="20"></p>
+</form>
+<address>Laget 19. september 2013<br>
+  av Erling.</address>
+
+</body>
+</html>
